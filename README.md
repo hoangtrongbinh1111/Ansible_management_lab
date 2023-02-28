@@ -59,3 +59,6 @@ create_users:
 ```
 
 Note: Feel free to mail me at ravi-teja@live.com or open a issue here for any help/issues. Have Fun! 
+
+- How to run playbook: ansible-playbook manage.yml --tags <tag_name> --check --ask-become-pass
+   
