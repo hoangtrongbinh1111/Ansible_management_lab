@@ -1,0 +1,49 @@
+---
+galaxy_info:
+  author: RaviTezu
+  description: Manage User accounts and Groups on a server 
+  license: MIT
+  min_ansible_version: 1.6
+  platforms:
+  - name: EL
+    versions:
+    - all
+    - 5
+    - 6
+    - 7
+  - name: Fedora
+    versions:
+    - all
+    - 16
+    - 17
+    - 18
+    - 19
+    - 20
+  - name: Ubuntu
+    versions:
+    - all
+    - lucid
+    - maverick
+    - natty
+    - oneiric
+    - precise
+    - quantal
+    - raring
+    - saucy
+    - trusty
+  - name: GenericLinux
+    versions:
+    - all
+    - any
+  - name: Debian
+    versions:
+    - all
+    - etch
+    - lenny
+    - squeeze
+    - wheezy
+  
+  categories:
+  - cloud:ec2
+  - system
+  dependencies: []
