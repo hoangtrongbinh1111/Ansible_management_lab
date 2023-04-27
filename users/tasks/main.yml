@@ -12,6 +12,18 @@
 - include_vars: users_absent.yml
   tags: always
 
+- include_vars: become_admin.yml
+  tags: always
+
+- name: Become-Admin | Make sure these groups are present
+  lineinfile:
+    path: /etc/sudoers
+    line: '%{{item.group_name}} ALL=(ALL) NOPASSWD:ALL'
+    state: "present"       
+    validate: 'visudo -cf %s'
+  with_items: '{{ become_admin }}'
+  tags: become_admin
+
 - name: Create-Groups | Make sure these groups are present
   group: name="{{item.name}}" system="{{item.system|default('no')}}" 
           state=present

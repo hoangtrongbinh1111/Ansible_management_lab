@@ -3,14 +3,14 @@
 #If this format is not working for you: Please see Warning section in README.md file.
 create_users:
 - 
-    name:  "user_test"                   #Required                                
-    gecos: "Full_name_user1"         #optional def: above mentioned name is used
+    name:  "huyentrang_k54"                   #Required                                
+    gecos: "NguyenHuyenTrang"         #optional def: above mentioned name is used
     pass:  "khmt@123" #optional def: no password
     system: no                      #optional def: no help: If "yes" uid betweeen 100-499 will be used.
-    group: "ch33"                   #optional def: creates a new group with name
+    group: "nhomcoNgoc"                   #optional def: creates a new group with name
     groups: []        #optional def: null
     shell: "/bin/bash"       #optional def: /bin/bash
-    home: "/home/user_test"           #optional def: /home/<Above_mentioned_name>
+    home: "/home/huyentrangk54"           #optional def: /home/<Above_mentioned_name>
     home_create: yes                  #optional def: yes help: If "no" home dir will not be created.
     state: "present"                 #optional always: present
     append: yes                      #optional def: yes - If "no" user will be removed all other groups except the groups mentioned in groups
